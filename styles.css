@@ -20,10 +20,9 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #190B03; /* Ensure text remains visible */
+    color: #190B03; /
 }
 
-/* Background image with opacity using ::before */
 .hero-banner::before {
     content: "";
     position: absolute;
@@ -41,7 +40,7 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    background: transparent; /* Ensure it doesn't block the image */
+    background: transparent; 
 }
 
 nav{
@@ -82,16 +81,16 @@ nav ul li a{
 }
 
 .hero-section p {
-    font-size: 18px; /* Adjust paragraph size */
+    font-size: 18px; 
     font-family: 'Open Sans', sans-serif;
-    line-height: 1.6; /* Improve readability */
+    line-height: 1.6; 
     margin-bottom: 30px;
     font-weight: 400;
     color: #190B03;
     text-align: center;
 }
 
-/* Style for the button */
+
 .hero-section button {
     background-color:#F6F3EF; /* Button color */
     color: #190B03; /* Text color */
@@ -99,3 +98,46 @@ nav ul li a{
     padding: 22px 74px;
     border: 1px solid #190B03;
 }
+
+.category-section {
+    background: url('/pweb-lab2/images/CATEGORY_SECTION.png') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 80px 80px;
+    background-color: #F6F3EF;
+}
+
+.category-image.large img {
+    width: 433px;
+    height: auto;
+    object-fit: cover;
+}
+
+.category-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.category-list a {
+    font-family: 'Bebas Neue';
+    text-decoration: none;
+    font-size: 60px;
+    color: #190B03;
+}
+
+.category-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.category-images img {
+    width: 433px; /* Adjust sizes */
+    height: auto;
+    object-fit: cover;
+}
+
