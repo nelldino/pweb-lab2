@@ -117,7 +117,9 @@ nav ul{
 }
 
 .category-image.large img {
+
     width: 430px;
+    width: 433px;
     height: auto;
     object-fit: cover;
 }
@@ -144,7 +146,12 @@ nav ul{
 }
 
 .category-images img {
-    width: 430px; /* Adjust sizes */
+    width: 430px; 
+    gap: 20px;
+}
+
+.category-images img {
+    width: 433px; 
     height: auto;
     object-fit: cover;
 }
