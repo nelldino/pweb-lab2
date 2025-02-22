@@ -41,6 +41,7 @@ header {
     top: 0;
     left: 0;
     background: transparent; 
+    padding: 10px 5%;
 }
 
 nav{
@@ -57,6 +58,7 @@ nav{
     gap: 3px;
 }
 
+
 nav ul{
     display: flex;
     align-items: center;
@@ -66,10 +68,15 @@ nav ul{
     padding: 0;
 }
 
-nav ul li a{
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
     color: #190B03;
+    font-size: 16px;
     font-family: 'Open Sans';
-    font-size: 18px;
 }
 
 /* Style for the heading */
@@ -92,8 +99,8 @@ nav ul li a{
 
 
 .hero-section button {
-    background-color:#F6F3EF; /* Button color */
-    color: #190B03; /* Text color */
+    background-color:#F6F3EF; 
+    color: #190B03; 
     font-size: 18px;
     padding: 22px 74px;
     border: 1px solid #190B03;
@@ -110,6 +117,8 @@ nav ul li a{
 }
 
 .category-image.large img {
+
+    width: 430px;
     width: 433px;
     height: auto;
     object-fit: cover;
@@ -127,17 +136,27 @@ nav ul li a{
     text-decoration: none;
     font-size: 60px;
     color: #190B03;
+    font-weight: 400px;
 }
 
 .category-images {
     display: flex;
     flex-direction: column;
+    gap: 30px;
+}
+
+.category-images img {
+    width: 430px; 
     gap: 20px;
 }
 
 .category-images img {
-    width: 433px; /* Adjust sizes */
+    width: 433px; 
     height: auto;
     object-fit: cover;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+}
