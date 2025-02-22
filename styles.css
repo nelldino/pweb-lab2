@@ -148,10 +148,21 @@ nav ul{
     display: flex;
     flex-direction: column;
     gap: 30px;
+
 }
 
 .category-images img {
     width: 430px; 
+
+}
+
+.category-images img {
+    width: 430px; 
+    gap: 20px;
+}
+
+.category-images img {
+    width: 433px; 
     height: auto;
     object-fit: cover;
 }
@@ -160,6 +171,7 @@ nav ul{
     display: flex;
     flex-direction: column;
 }
+
 .bestsellers-section {
     background: url('/pweb-lab2/images/BESTSELLER-SECTION.svg') center/cover no-repeat;
     padding: 80px 100px;
