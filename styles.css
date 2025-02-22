@@ -273,7 +273,6 @@ nav ul{
     background:#F6F3EF;
 }
 
-/* Input field */
 .email-input {
     flex: 1;
     border: none;
@@ -284,7 +283,6 @@ nav ul{
     background:#F6F3EF
 }
 
-/* Submit button */
 .email-submit {
     background: #2435cd;
     border: none;
@@ -293,3 +291,24 @@ nav ul{
     font-size: 18px;
     cursor: pointer;
 }
+
+.footer-section {
+    background: #F6F3EF;
+    color: #190B03;
+    padding: 40px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    position: relative; 
+}
+
+.footer-content {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap; 
