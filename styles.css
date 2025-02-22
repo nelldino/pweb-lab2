@@ -2,6 +2,7 @@
     --blue: #2435cd;
     --brown: #190B03;
     --light: #F6F3EF;
+    --dark:#EDE8E1;
 }
 * {
     margin: 0;
@@ -12,6 +13,11 @@
 body {
     background-color: #F6F3EF;  
 }
+
+a {
+    text-decoration: none;
+}
+
 .hero-banner {
     position: relative;
     height: 880px;
@@ -79,7 +85,6 @@ nav ul{
     font-family: 'Open Sans';
 }
 
-/* Style for the heading */
 .hero-section h1 {
     font-size: 100px;
     font-family: 'Bebas Neue';
@@ -107,7 +112,7 @@ nav ul{
 }
 
 .category-section {
-    background: url('/pweb-lab2/images/CATEGORY_SECTION.png') center/cover no-repeat;
+    background: url('/pweb-lab2/images/CATEGORY_SECTION.svg') center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,3 +160,54 @@ nav ul{
     display: flex;
     flex-direction: column;
 }
+.bestsellers-section {
+    background: url('/pweb-lab2/images/BESTSELLER-SECTION.svg') center/cover no-repeat;
+    padding: 80px 100px;
+    background-color: #F6F3EF;
+
+}
+
+.bestsellers-section h4 {
+    font-size: 60px;
+    font-family: 'Bebas Neue';
+    font-weight: 400;
+    color: #190B03;
+}
+.bestsellers-section button{
+    background-color:#EDE8E1; 
+    color: #190B03; 
+    font-size: 18px;
+    padding: 22px 74px;
+    border: 1px solid #190B03;
+    margin-top: 20px;
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+.single-product{
+    background-color: #F6F3EF
+}
+.product-info{
+    margin-top: 20px;
+}
+
+.product-name, .product-price{
+    color: #190B03;
+    font-size: 18px;
+    font-family: 'Open Sans';
+    line-height: 150%;
+    font-weight: 350;
+}
+
+.product-detail{
+    color: #190B03;
+    font-size: 14px;
+    font-family: 'Open Sans';
+    line-height: 150%;
+    font-weight: 350;
+}
+
