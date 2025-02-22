@@ -99,3 +99,45 @@ nav ul li a{
     padding: 22px 74px;
     border: 1px solid #190B03;
 }
+
+.category-section {
+    background: url('/pweb-lab2/images/CATEGORY_SECTION.png') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 80px 80px;
+    background-color: #F6F3EF; /* Background similar to your previous design */
+}
+
+.category-image.large img {
+    width: 433px; /* Adjust as needed */
+    height: auto;
+    object-fit: cover;
+}
+
+.category-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.category-list a {
+    font-family: 'Bebas Neue';
+    text-decoration: none;
+    font-size: 60px;
+    color: #190B03;
+}
+
+.category-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.category-images img {
+    width: 433px; /* Adjust sizes */
+    height: auto;
+    object-fit: cover;
+}
