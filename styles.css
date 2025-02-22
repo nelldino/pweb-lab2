@@ -20,10 +20,9 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #190B03; /* Ensure text remains visible */
+    color: #190B03; /
 }
 
-/* Background image with opacity using ::before */
 .hero-banner::before {
     content: "";
     position: absolute;
@@ -41,7 +40,7 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    background: transparent; /* Ensure it doesn't block the image */
+    background: transparent; 
 }
 
 nav{
@@ -82,16 +81,16 @@ nav ul li a{
 }
 
 .hero-section p {
-    font-size: 18px; /* Adjust paragraph size */
+    font-size: 18px; 
     font-family: 'Open Sans', sans-serif;
-    line-height: 1.6; /* Improve readability */
+    line-height: 1.6; 
     margin-bottom: 30px;
     font-weight: 400;
     color: #190B03;
     text-align: center;
 }
 
-/* Style for the button */
+
 .hero-section button {
     background-color:#F6F3EF; /* Button color */
     color: #190B03; /* Text color */
@@ -107,11 +106,11 @@ nav ul li a{
     align-items: center;
     gap: 30px;
     padding: 80px 80px;
-    background-color: #F6F3EF; /* Background similar to your previous design */
+    background-color: #F6F3EF;
 }
 
 .category-image.large img {
-    width: 433px; /* Adjust as needed */
+    width: 433px;
     height: auto;
     object-fit: cover;
 }
@@ -141,3 +140,4 @@ nav ul li a{
     height: auto;
     object-fit: cover;
 }
+
