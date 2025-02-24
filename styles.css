@@ -18,6 +18,9 @@ body {
 a {
     text-decoration: none;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 .hero-banner {
     position: relative;
