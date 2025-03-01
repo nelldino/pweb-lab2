@@ -21,33 +21,58 @@ Create a web page for your/friends/relatives business (example: car-rent, cookie
 - For potential maximal mark, a WIP version should be submitted during the class
 - Use index.html, reset.css
 
+# Lab 3 - Responsive Design & Animations
 
+Improve your already amazing landing page
+
+## Customer requirements
+
+- Some of our clients view the landing page on mobile devices (please make the landing page responsive)
+  - All elements' sizes should be adjusted for desktop/mobile view. `3 Points`
+  - Call to action should be visible on mobile `1 Point`
+  - There should be mobile-only elements (example: a section, a title, an image) `1 Point`
+    
+- We need a mascot for our page similar to Microsoft Clippy, the mascot should:
+  - be related to the topic of the landing page `0.4 Points`
+  - be friendly/pleasant to the eyes (can be an image or an SVG) `1 Point`
+  - appear on the page after some delay on corners or borders of the page `1 Point`
+  - be animated (rotating, tilting, jumping, walking) `1.4 Points`
+  - display a welcome/CTA/info message when hovering with the mouse `1 Point`
+ 
+## Dev requirements
+
+- Use vanilla CSS and HTML (no frameworks)
+- Have a decent git history (no one commit)
+- The page with mascot and responsive design should be deployed on a live link
+
+- 
 ## Description
 
-- I chose to make a landing page for a jewelry shop, using an existing design made by me.
-- I have the following sections impelemented
-
-
-- Navbar and Hero Section, which includes other links to other sections of the page and a CTA button - Shop Now
+### Desktop view: 
   
-![image](https://github.com/user-attachments/assets/f8c00bc7-23f8-48ce-9500-eeab242fd2d5)
+![image](https://github.com/user-attachments/assets/a0ae47da-5bb0-45aa-9539-d00396ee5b7d)
 
-  - Product Categories sections, with all the type of products that the shop offers
 
-![image](https://github.com/user-attachments/assets/61607844-be65-4c1d-aee5-f9eb7b06432b)
+### Mobile view: 
+![image](https://github.com/user-attachments/assets/5961efc4-5466-4b24-b399-ab77a6b3eb3d)
 
-  - Bestseller section , which represents 4 of the most bought accessories and another CTA button for the users to explore the whole catalog items
+The only mobile element is the toggle menu part
 
-![image](https://github.com/user-attachments/assets/ac2e09a5-b82f-41ee-8172-3de54d1b91f0)
+![image](https://github.com/user-attachments/assets/396c87a2-9f03-49f9-9195-ca7aea6d0f87)
 
-- Newsletter section, for the users to be updated with the sales and other jewerly related stuff
-  
-![image](https://github.com/user-attachments/assets/6e7d77b1-2832-4c14-8931-79c5279f73ef)
 
-- The last part of my website is the footer
+### Mascot
 
-  ![image](https://github.com/user-attachments/assets/3362c140-f78d-4850-85db-eeeb6c376784)
+The mascot for this website is a crow with a necklace 
 
+![mascot](https://github.com/user-attachments/assets/fdbf994a-73b8-45b1-a8ee-4fa5b2d19881)
+
+The CTA part for the mascot
+
+![image](https://github.com/user-attachments/assets/cccdb8e2-a36b-4f01-a1a3-f0a77b79c1ac)
+
+The delay and animation os better seen on the live demo 
 
 ## Deployment
 Link to the deployed/live demo page: https://nelldino.github.io/pweb-lab2/
+
