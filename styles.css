@@ -559,15 +559,20 @@ nav ul{
     .bestsellers-section {
         padding: 40px 20px;
     }
+}
 
 .mascot {
     position: fixed;
     bottom: 50px;
     right: 20px;
+    opacity: 0; 
+    animation: fadeIn 1s ease-in-out forwards, walk 4s infinite alternate ease-in-out;
+    animation-delay: 1s; 
+    transform-origin: bottom center;
     transform: translateY(20px);
-    opacity: 0; /* Initially hidden */
+    opacity: 0; 
     animation: fadeIn 1s ease-in-out forwards;
-    animation-delay: 1s; /* 3-second delay before appearing */
+    animation-delay: 1s; 
 }
 
 @keyframes fadeIn {
@@ -581,7 +586,17 @@ nav ul{
     }
 }
 
-/* Styling for the CTA button */
+@keyframes walk {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    50% {
+        transform: translateX(-10px) rotate(-5deg); 
+    }
+    100% {
+        transform: translateX(10px) rotate(5deg);
+    }
+}
 .mascot-cta {
     font-family: 'Bebas Neue';
     position: absolute;
@@ -593,10 +608,11 @@ nav ul{
     border-radius: 5px;
     text-align: center;
     white-space: nowrap;
-    opacity: 0; /* Initially hidden */
+    opacity: 0;
+    opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
 
 .mascot:hover .mascot-cta {
-    opacity: 1; /* Show on hover */
+    opacity: 1;
 }
