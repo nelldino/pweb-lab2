@@ -567,12 +567,12 @@ nav ul{
     right: 20px;
     opacity: 0; 
     animation: fadeIn 1s ease-in-out forwards, walk 4s infinite alternate ease-in-out !important;
-    animation-delay: 1s; 
+    animation-delay: 2s !important; 
     transform-origin: bottom center;
     transform: translateY(20px);
     opacity: 0; 
     animation: fadeIn 1s ease-in-out forwards !important;
-    animation-delay: 1s!important; 
+    animation-delay: 2s !important; 
 }
 
 @keyframes fadeIn {
