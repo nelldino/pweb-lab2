@@ -566,6 +566,7 @@ nav ul{
     bottom: 50px;
     right: 20px;
     opacity: 0; 
+
     animation: fadeIn 1s ease-in-out forwards, walk 4s infinite alternate ease-in-out !important;
     animation-delay: 1s; 
     transform-origin: bottom center;
