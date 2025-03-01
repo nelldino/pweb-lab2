@@ -560,3 +560,10 @@ nav ul{
         padding: 40px 20px;
     }
 }
+
+.mascot {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    transform: translateY(20px);
+}
