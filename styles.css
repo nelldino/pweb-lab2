@@ -30,7 +30,7 @@ html {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #190B03; /
+    color: #190B03;
 }
 
 .hero-banner::before {
@@ -40,7 +40,7 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('/pweb-lab2/images/HEADER_BACKGROUND.png') center/cover no-repeat;
+    background: url('images/HEADER_BACKGROUND.png') center/cover no-repeat;
     opacity: 0.7; 
     z-index: -1;
 }
@@ -68,14 +68,51 @@ nav{
     gap: 3px;
 }
 
+/* Hamburger menu CSS-only solution */
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    position: relative;
+}
+
+.menu-icon::before,
+.menu-icon::after,
+.menu-icon span {
+    background-color: var(--brown);
+    content: '';
+    display: block;
+    height: 3px;
+    position: absolute;
+    width: 100%;
+}
+
+.menu-icon::before {
+    top: 0;
+}
+
+.menu-icon span {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu-icon::after {
+    bottom: 0;
+}
 
 nav ul{
     display: flex;
     align-items: center;
     gap: 50px;
-    list-style: none ;
+    list-style: none;
     margin: 0;
     padding: 0;
+    transition: all 0.3s ease;
 }
 
 .nav-links li {
@@ -87,6 +124,14 @@ nav ul{
     color: #190B03;
     font-size: 16px;
     font-family: 'Open Sans';
+}
+
+/* Create a separate hero image container for mobile */
+.hero-image {
+    display: none; /* Hidden by default, will show on mobile */
+    width: 100%;
+    height: 300px;
+    background: url('images/HEADER_BACKGROUND.png') center/cover no-repeat;
 }
 
 .hero-section h1 {
@@ -104,8 +149,11 @@ nav ul{
     font-weight: 400;
     color: #190B03;
     text-align: center;
+    padding: 0 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
 
 .hero-section button {
     background-color:#F6F3EF; 
@@ -116,7 +164,7 @@ nav ul{
 }
 
 .category-section {
-    background: url('/pweb-lab2/images/CATEGORY_SECTION.svg') center/cover no-repeat;
+    background: url('/images/CATEGORY_SECTION.svg') center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,11 +174,10 @@ nav ul{
 }
 
 .category-image.large img {
-
-    width: 430px;
     width: 433px;
     height: auto;
     object-fit: cover;
+    max-width: 100%;
 }
 
 .category-list {
@@ -152,35 +199,24 @@ nav ul{
     display: flex;
     flex-direction: column;
     gap: 30px;
-
-}
-
-.category-images img {
-    width: 430px; 
-
-}
-
-.category-images img {
-    width: 430px; 
-    gap: 20px;
 }
 
 .category-images img {
     width: 433px; 
     height: auto;
     object-fit: cover;
+    max-width: 100%;
 }
 
 .container {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
 }
 
 .bestsellers-section {
-    background: url('/pweb-lab2/images/BESTSELLER-SECTION.svg') center/cover no-repeat;
+    background: url('images/BESTSELLER-SECTION.svg') center/cover no-repeat;
     padding: 80px 100px;
     background-color: #F6F3EF;
-
 }
 
 .bestsellers-section h4 {
@@ -189,6 +225,7 @@ nav ul{
     font-weight: 400;
     color: #190B03;
 }
+
 .bestsellers-section button{
     background-color:#EDE8E1; 
     color: #190B03; 
@@ -203,10 +240,20 @@ nav ul{
     flex-wrap: wrap;
     margin-top: 40px;
     justify-content: space-between;
+    gap: 20px;
 }
+
 .single-product{
-    background-color: #F6F3EF
+    background-color: #F6F3EF;
+    flex: 1 0 calc(25% - 20px);
+    min-width: 200px;
 }
+
+.single-product img {
+    width: 100%;
+    height: auto;
+}
+
 .product-info{
     margin-top: 20px;
 }
@@ -231,18 +278,17 @@ nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 80px;
+    padding: 80px 20px;
     background-color: #F6F3EF; 
 }
 
-
 .newsletter-container {
-    background: url('/pweb-lab2/images/NEWSLETTER-SECTION.svg') center/cover no-repeat;
-    padding: 40px;
-    width: 1000px;
+    background: url('images/NEWSLETTER-SECTION.svg') center/cover no-repeat;
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 1000px;
     text-align: center;
 }
-
 
 .newsletter-container h3 {
     font-size: 45px;
@@ -260,12 +306,11 @@ nav ul{
     line-height: 1.5;
     margin-top: 20px;
     margin-bottom: 30px;
-    max-width: 660px; /* Shrink the text width */
+    max-width: 660px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
-
 
 .email-container {
     display: flex;
@@ -298,7 +343,7 @@ nav ul{
 .footer-section {
     background: #F6F3EF;
     color: #190B03;
-    padding: 40px 0;
+    padding: 40px 20px;
 }
 
 .footer-container {
@@ -316,4 +361,202 @@ nav ul{
     transform: translateX(-50%);
     white-space: nowrap; 
     font-family: 'Open Sans';
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .single-product {
+        flex: 1 0 calc(33.333% - 20px);
+    }
+    
+    nav {
+        padding: 20px 40px;
+    }
+    
+    .category-section {
+        padding: 60px 40px;
+    }
+    
+    .bestsellers-section {
+        padding: 60px 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-section h1 {
+        font-size: 80px;
+    }
+    
+    .category-section {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .category-list a {
+        font-size: 50px;
+    }
+    
+    .bestsellers-section h4 {
+        font-size: 50px;
+    }
+    
+    .newsletter-container h3 {
+        font-size: 40px;
+    }
+    
+    .single-product {
+        flex: 1 0 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-banner {
+        height: auto;
+        justify-content: flex-start;
+        padding-top: 80px; 
+    }
+    
+    .hero-banner::before {
+        display: none;
+    }
+    
+    .hero-image {
+        display:flex;
+        margin-bottom: 30px;
+        opacity: 0.7;
+    }
+    
+    .hero-section {
+        padding: 40px 20px;
+        background-color: var(--light);
+    }
+    
+    .hero-section h1 {
+        font-size: 60px;
+    }
+    
+    .hero-section p {
+        font-size: 16px;
+    }
+    
+    .hero-section button {
+        padding: 18px 50px;
+        font-size: 16px;
+    }
+    
+    nav {
+        padding: 15px 20px;
+    }
+    
+    .menu-icon {
+        display: block;
+        z-index: 10;
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100vh;
+        background-color: var(--light);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 80px 20px 20px;
+        transition: right 0.3s ease;
+        z-index: 5;
+    }
+    
+    .nav-links li {
+        display: block;
+        margin: 15px 0;
+    }
+    
+    .menu-toggle:checked ~ .nav-links {
+        right: 0;
+    }
+    
+    .bestsellers-section button {
+        padding: 15px 40px;
+        font-size: 16px;
+    }
+    .category-section {
+        background-image: none;
+    }
+    
+    .bestsellers-section {
+        background-image: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section h1 {
+        font-size: 50px;
+    }
+    
+    .category-list a {
+        font-size: 40px;
+    }
+    
+    .bestsellers-section h4 {
+        font-size: 40px;
+    }
+    
+    .newsletter-container h3 {
+        font-size: 35px;
+    }
+    
+    .newsletter-container p {
+        font-size: 14px;
+    }
+    
+    .single-product {
+        flex: 1 0 100%;
+    }
+    
+    .email-container {
+        flex-direction: column;
+        width: 90%;
+    }
+    
+    .email-input {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    
+    .email-submit {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .footer-content {
+        position: static;
+        transform: none;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 40px;
+    }
+    
+    .hero-image {
+        height: 250px; 
+    }
+    
+    nav {
+        padding: 15px 10px;
+    }
+    
+    .category-section, 
+    .bestsellers-section {
+        padding: 40px 20px;
+    }
 }
