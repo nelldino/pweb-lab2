@@ -570,9 +570,9 @@ nav ul{
     animation-delay: 2s !important; 
     transform-origin: bottom center;
     transform: translateY(20px);
-    opacity: 0; 
+    /* opacity: 0; 
     animation: fadeIn 1s ease-in-out forwards !important;
-    animation-delay: 2s !important; 
+    animation-delay: 2s !important;  */
 }
 
 @keyframes fadeIn {
