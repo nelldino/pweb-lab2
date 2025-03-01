@@ -45,7 +45,7 @@ Improve your already amazing landing page
 - Have a decent git history (no one commit)
 - The page with mascot and responsive design should be deployed on a live link
 
-- 
+
 ## Description
 
 ### Desktop view: 
