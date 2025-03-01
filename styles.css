@@ -566,4 +566,38 @@ nav ul{
     bottom: 50px;
     right: 20px;
     transform: translateY(20px);
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 1s; /* 3-second delay before appearing */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Styling for the CTA button */
+.mascot-cta {
+    font-family: 'Bebas Neue';
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    color: #2435cd;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    text-align: center;
+    white-space: nowrap;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease-in-out;
+}
+
+.mascot:hover .mascot-cta {
+    opacity: 1; /* Show on hover */
 }
