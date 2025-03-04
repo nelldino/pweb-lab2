@@ -1,10 +1,13 @@
+
+
 :root {
     --blue: #2435cd;
     --brown: #190B03;
     --light: #F6F3EF;
-    --dark:#EDE8E1;
+    --dark: #EDE8E1;
     --text: #452E2E;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -208,7 +211,7 @@ nav ul{
     max-width: 100%;
 }
 
-.container {
+.my-container {
     /* display: flex; */
     flex-direction: column;
 }
